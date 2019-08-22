@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.155147">
+    <testcase classname="Google Search" name="Open browser" time="13.155147">
+        <system-out>
+            <![CDATA[Given I am able to open browser as "chrome".................................passed
+When I enter the URL as "http://www.amazon.co.in"...........................passed
+Then Title should be "Amazon Sign In".......................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Merck Automation Test Suite]">
+  <test thread-count="1" name="Dealer Path">
+    <classes>
+      <class name="com.cucumber.runner.Runner"/>
+    </classes>
+  </test> <!-- Dealer Path -->
+</suite> <!-- Failed suite [Merck Automation Test Suite] -->

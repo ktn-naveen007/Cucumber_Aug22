@@ -1,0 +1,4 @@
+# Created at 2019-03-28T15:07:19.787
+Boot Manifest-JAR contains absolute paths in classpath 'E:\Merck\Yash_Cucumber_POC\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

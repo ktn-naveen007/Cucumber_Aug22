@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DealerPath Application Automation Test Suite]">
+  <test thread-count="1" name="Dealer Path">
+    <classes>
+      <class name="runner.Runner"/>
+    </classes>
+  </test> <!-- Dealer Path -->
+  <test name="Dealer Path(failed)">
+    <classes>
+      <class name="runner.Runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="3"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runner.Runner -->
+    </classes>
+  </test> <!-- Dealer Path(failed) -->
+</suite> <!-- Failed suite [DealerPath Application Automation Test Suite] -->

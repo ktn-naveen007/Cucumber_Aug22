@@ -1,0 +1,153 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 16,
+        "name": "Verify Login functionality",
+        "description": "",
+        "id": "login;verify-login-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 263111,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AddUser_TestCase.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 36444,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InvalidEmail_TestCase.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8123884055,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open browser as \"Firefox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Firefox",
+                  "offset": 17
+                }
+              ],
+              "location": "Login_TestCase.open_browser_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 870284831,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter the URL as \"http://yp1007034lt/yash-test/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://yp1007034lt/yash-test/",
+                  "offset": 18
+                }
+              ],
+              "location": "Login_TestCase.enter_the_URL_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 323571255,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter Username and Password",
+            "match": {
+              "location": "Login_TestCase.enter_Username_and_Password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jasonbob",
+                  "test123"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 815740807,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on login button",
+            "match": {
+              "location": "Login_TestCase.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7511114,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Title should be \"Yash Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yash Admin",
+                  "offset": 17
+                }
+              ],
+              "location": "Login_TestCase.title_should_be(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 281281014,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Close the browser",
+            "match": {
+              "location": "Login_TestCase.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Functional1"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
