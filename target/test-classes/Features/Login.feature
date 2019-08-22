@@ -13,7 +13,7 @@ Scenario Outline: Verify Login functionality
 	
 	Examples: 
 		| browser 		| URL  								|
-		| Firefox    	| http://yp1007034lt/yash-test/ 	|
+		|Chrome    	| http://yp1007034lt/yash-test/ 	|
 		
 		
 		
