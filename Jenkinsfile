@@ -1,11 +1,9 @@
 node('master'){
-
 stage('initialize'){
 git credentialsId: 'fcaef341-35bd-4ce9-9884-e198792f39ee', url: 'https://github.com/ktn-naveen007/Cucumber_Aug22.git'
-
 }
 stage('compile'){
- bat '''
+bat '''
 mvn compile
 '''
 }
@@ -13,4 +11,5 @@ stage('unittest'){
 bat '''
 mvn test
 '''
+}
 }
