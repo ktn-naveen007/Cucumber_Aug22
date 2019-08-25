@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Merck_Automation_Test_Suite">
-              <span class="suite-name border-passed">Merck Automation Test Suite</span>
+              <span class="suite-name border-failed">Merck Automation Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Merck_Automation_Test_Suite" class="hide-methods failed suite-Merck_Automation_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Merck_Automation_Test_Suite -->
+                      <a href="#" panel-name="suite-Merck_Automation_Test_Suite" class="show-methods failed suite-Merck_Automation_Test_Suite"> (show)</a> <!-- show-methods failed suite-Merck_Automation_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Merck_Automation_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Merck_Automation_Test_Suite" title="com.cucumber.runner.Runner" hash-for-method="feature(Add New User)">feature(Add New User)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Merck_Automation_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +131,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Merck_Automation_Test_Suite" class="panel Merck_Automation_Test_Suite">
+          <div class="suite-Merck_Automation_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cucumber.runner.Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Add New User)">
+                  </a> <!-- feature(Add New User) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Add New User)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NullPointerException
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:115)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:102)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at com.cucumber.base.BaseClass.&lt;init&gt;(BaseClass.java:40)
+	at com.cucumber.pages.AddUser_Factory.&lt;init&gt;(AddUser_Factory.java:20)
+	at com.cucumber.steps.AddUser_TestCase.click_on_Add_User_link(AddUser_TestCase.java:38)
+	at ✽.When Click on Add User link(Verify_AddUser.feature:11)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Merck_Automation_Test_Suite-class-failed -->
           <div class="suite-Merck_Automation_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -195,11 +241,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.cucumber.runner.Runner')
-data.setCell(0, 3, 10686);
+data.setCell(0, 3, 6368);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'feature')
+data.setCell(1, 2, 'com.cucumber.runner.Runner')
+data.setCell(1, 3, 4629);
 window.suiteTableData['Merck_Automation_Test_Suite']= { tableData: data, tableDiv: 'times-div-Merck_Automation_Test_Suite'}
 return data;
 }
@@ -237,11 +287,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">feature(Login)</span>
-                <span class="method-start">265 ms</span>
+                <span class="method-start">324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Add New User)</span>
+                <span class="method-start">6692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">10951 ms</span>
+                <span class="method-start">11333 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

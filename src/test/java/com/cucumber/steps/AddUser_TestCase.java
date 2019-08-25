@@ -23,6 +23,7 @@ import com.cucumber.utility.BrowserFactory;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 
 import com.relevantcodes.extentreports.*;
 
@@ -32,7 +33,7 @@ public class AddUser_TestCase extends BrowserFactory {
 	 WebDriver driver;
 	 
 	
-	@Given("^Click on Add User link$")
+	@When("^Click on Add User link$")
 	public void click_on_Add_User_link() throws Throwable {
 		AddUser_Factory addUser = new AddUser_Factory(driver);
 		addUser.clickAddUserLink();

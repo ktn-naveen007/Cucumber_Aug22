@@ -21,7 +21,7 @@ public class AddUser_Factory extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Add User')]")
+	@FindBy(how = How.XPATH, using = "//ul[@class='quick-actions']/li[2]/a")
 	WebElement webEle_AddUser;
 
 	@FindBy(how = How.XPATH, using = "//input[@id='required']")

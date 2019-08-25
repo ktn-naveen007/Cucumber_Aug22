@@ -6,4 +6,15 @@
       <class name="com.cucumber.runner.Runner"/>
     </classes>
   </test> <!-- Dealer Path -->
+  <test name="Dealer Path(failed)">
+    <classes>
+      <class name="com.cucumber.runner.Runner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.cucumber.runner.Runner -->
+    </classes>
+  </test> <!-- Dealer Path(failed) -->
 </suite> <!-- Failed suite [Merck Automation Test Suite] -->
